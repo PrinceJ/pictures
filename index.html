@@ -1,0 +1,246 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>送卡罗出道</title>
+	<style type="text/css">
+		body
+		{
+			padding: 0;
+			margin: 0;
+		}
+		#all
+		{
+			width: 2040px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		#page-flip
+		{
+			background-image: url(pagebg.jpg);
+			position: absolute;
+			padding: 120px 120px 120px 1020px;
+			width: 900px;
+			height: 1200px;
+			overflow: hidden;
+		}
+		#r1
+		{
+			position: absolute;
+			z-index: 2;
+			-webkit-transform-origin: 3945px 1500px;
+			-webkit-transform: translate(-3090px, -1500px) rotate(-32deg);
+			-webkit-transition-property: -webkit-transform, -webkit-transform-origin;
+			-webkit-transition-duration: 1s;
+		}
+		#p1
+		{
+			width: 3855px;
+			height: 4164px;
+			overflow: hidden;
+		}
+ 
+		#p1 > div
+		{
+			-webkit-transform-origin: 855px 0;
+			-webkit-transform: translate(3090px, 1500px) rotate(32deg);
+			-webkit-transition-property: -webkit-transform, -webkit-transform-origin;
+			-webkit-transition-duration: 1s;
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			width: 855px;
+			height: 1164x;
+			background-image: url(https://raw.githubusercontent.com/PrinceJ/pictures/main/page_1.jpg);
+		}
+		#p1 > div > div
+		{
+			width: 30px;
+			height: 1164px;
+			background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .25)), to(rgba(0,0,0,0)));
+		}
+ 
+		#p2 > div
+		{
+			width: 855px;
+			height: 1164px;
+			-webkit-box-shadow: 0 0 11px rgba(0, 0, 0, .5);
+			position: absolute;
+			z-index: 1;
+			background-image: url(page2.jpg);
+		}
+		#r3
+		{
+			-webkit-transform-origin: 3945px 1500px;
+			-webkit-transform: translate(-3090px, -1500px) rotate(-32deg);
+			-webkit-transition-property: -webkit-transform, -webkit-transform-origin;
+			-webkit-transition-duration: 1s;
+			position: absolute;
+			z-index: 2;
+		}
+ 
+		#s3
+		{
+			-webkit-transform-origin: 210px 1500px;
+			-webkit-transform: translate(645px, -1500px) rotate(-32deg) translate(120px, 0);
+			-webkit-transition-property: -webkit-transform, -webkit-transform-origin;
+			-webkit-transition-duration: 1s;
+			position: absolute;
+			z-index: 1;
+		}
+		#page-flip:hover #s3
+		{
+			-webkit-transform-origin: 975px 1500px;
+			-webkit-transform: translate(-120px, -1500px) rotate(0deg) translate(120px, 0);
+		}
+		#sp3
+		{
+			width: 75px;
+			height: 3000px;
+			background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .25)), to(rgba(0,0,0,0)));
+			-webkit-transition-property: width;
+			-webkit-transition-duration: 1s;
+			overflow: hidden;
+		}
+		#page-flip:hover #sp3
+		{
+			width: 33px;
+		}
+		.s
+		{
+			width: 855px;
+			height: 1164px;
+			position: absolute;
+			overflow: hidden;
+			z-index: 3;
+		}
+		#s2
+		{
+			-webkit-transform-origin: 135px 1500px;
+			-webkit-transform: translate(720px, -1500px) rotate(-32deg);
+			-webkit-transition-property: -webkit-transform, -webkit-transform-origin;
+			-webkit-transition-duration: 1s;
+			position: absolute;
+		}
+		#sp2
+		{
+			width: 45px;
+			height: 3000px;
+			background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, .18)), to(rgba(0,0,0,0)));
+			overflow: hidden;
+		}
+		#s4
+		{
+			opacity: 1;
+			-webkit-transition-duration: 0.5s;
+		}
+		#page-flip:hover #s4
+		{
+			opacity: 0;
+		}
+		#page-flip:hover #s2
+		{
+			-webkit-transform-origin: 900px 1500px;
+			-webkit-transform: translate(-45px, -1500px) rotate(0deg);
+		}
+		#p3
+		{
+			width: 3855px;
+			height: 4164px;
+			overflow: hidden;
+		}
+		#p3 > div
+		{
+			-webkit-transform-origin: 0 0;
+			-webkit-transform: translate(3765px, 1500px) rotate(-32deg);
+			-webkit-transition-property: -webkit-transform, -webkit-transform-origin;
+			-webkit-transition-duration: 1s;
+			-webkit-box-shadow: 0 0 11px rgba(0, 0, 0, .5);
+			width: 855px;
+			height: 1164px;
+			background-image: url(page3.jpg);
+			overflow: hidden;
+		}
+		#p3 > div > div
+		{
+			width: 27px;
+			height: 1500px;
+			float: right;
+			background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0,0,0,.20)));
+		}
+		
+		#page-flip:hover #r1
+		{
+			-webkit-transform-origin: 4710px 1500px;
+			-webkit-transform: translate(-3855px, -1500px) rotate(0deg);
+		}
+		#page-flip:hover #p1 > div
+		{
+			-webkit-transform-origin: 855px 0;
+			-webkit-transform: translate(3855px, 1500px) rotate(0deg);
+		}
+		#page-flip:hover #r3
+		{
+			-webkit-transform-origin: 4710px 1500px;
+			-webkit-transform: translate(-3855px, -1500px) rotate(0deg);
+		}
+		#page-flip:hover #p3 > div
+		{
+			-webkit-transform-origin: 0 0;
+			-webkit-transform: translate(3000px, 1500px) rotate(0deg);
+		}
+		a
+		{
+			display: block;
+			position: absolute;
+			margin: -60000px 0 0 0;
+			padding: 1px;
+			z-index: 3;
+			-webkit-transition-property: margin;
+			-webkit-transition-duration: 0.01s;
+		}
+		a:hover
+		{
+			padding: 0;
+			border: 3px dotted #92C7C1;
+		}
+		#page-flip:hover #coke
+		{
+			-webkit-transition-delay: .8s;
+			margin: 99px 0 0 42px;
+		}
+		#meninas
+		{
+			width: 759px;
+			height: 501px;
+		}
+		#page-flip:hover #meninas
+		{
+			-webkit-transition-delay: .8s;
+			margin: 609px 0 0 42px;
+		}
+	</style>
+</head>
+<body>
+
+<div style="text-align:center;clear:both;">
+<script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
+<script src="/follow.js" type="text/javascript"></script>
+</div>
+
+	<div id="all">
+		<div id="page-flip">
+			<div id="r1"><div id="p1"><div><div></div></div></div></div>
+			<div id="p2"><div></div></div>
+			<div id="r3"><div id="p3"><div><div></div></div></div></div>
+			<div class="s"><div id="s3"><div id="sp3"></div></div></div>
+			<div class="s" id="s4"><div id="s2"><div id="sp2"></div></div></div>
+			<a id="coke" href="#" title="Pure CSS Coke Can"></a>
+			<a id="meninas" href="#" title="CSS 3D Meninas"></a>
+		</div>
+	</div>
+</body>
+</html>
